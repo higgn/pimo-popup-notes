@@ -2,6 +2,9 @@
 ![License](https://img.shields.io/github/license/higgn/pimo-popup-notes?style=flat-square)
 ![Downloads](https://img.shields.io/github/downloads/higgn/pimo-popup-notes/total?style=flat-square)
 
+
+![Pimo ](pimo.gif)
+
 Pimo — tiny always-on-top popup notes for Windows
 ===============================================
 
@@ -17,6 +20,8 @@ Yes, another notes app — but this one is opinionated and tiny. Pimo is a minim
 - Packaged as a single Windows NSIS installer (.exe) (see packaging section)
 
 This repository contains a small Electron app (main + renderer) and a simple UI.
+<img width="626" height="304" alt="image" src="https://github.com/user-attachments/assets/79d9f14a-2e5e-4cd0-872c-01f364d54303" />
+
 
 Quick TL;DR (for impatient humans)
 ----------------------------------
@@ -178,6 +183,8 @@ Small developer notes & tips
 
 Publishing checklist
 --------------------
+<img width="637" height="454" alt="image" src="https://github.com/user-attachments/assets/d545c16f-048f-4b52-876f-192afe39c0b9" />
+
 
 - [ ] Add repository metadata to `package.json`.
 - [ ] Create a `CHANGELOG.md` if you want to track versions.
