@@ -8,7 +8,7 @@ Yes, another notes app — but this one is opinionated and tiny. Pimo is a minim
 - Pages: create / next / prev / delete
 - Drag & drop images (from Explorer or browser) → thumbnails and modal preview
 - Images stored inline (data: URLs) in saved JSON (easy to move later)
-- Settings modal with editable "About / author / donate" fields saved into app data
+- Settings modal shows static "About / credits" information (author, contact, donate link)
 - Export / Import JSON of all data
 - Packaged as a single Windows NSIS installer (.exe) (see packaging section)
 
@@ -106,15 +106,15 @@ Signing is outside the scope of this README (you need a certificate and vendor a
 Settings — "About" and Credits
 -------------------------------
 
-Open Settings (⚙️) in the app. There is an "About / credits" section where you can set:
+Open Settings (⚙️) in the app. The Settings modal displays static About / credits information by default:
 
-- Author / Team name
-- Developer email
-- Website / repo URL
-- Donate link (PayPal, BuyMeACoffee, etc.)
-- Short About / credits text
+- Author / Team name (shown as "higgn")
+- Contact email (dummy example shown in the shipped build)
+- Website / repo URL (dummy example shown in the shipped build)
+- Donate link (dummy example shown in the shipped build)
+- Short About / credits blurb
 
-Those values are saved to `data.settings` inside the saved JSON and will travel with exports.
+These values are currently static in the shipped app; if you fork the repo you can update the static strings in `index.html` or reintroduce editable fields in `renderer.js` and save them into `data.settings` if you prefer.
 
 Contributing (yes please)
 -------------------------
