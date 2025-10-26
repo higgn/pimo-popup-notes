@@ -1,0 +1,34 @@
+{
+  "name": "pimo-popup-notes",
+  "version": "1.0.0",
+  "description": "A tiny always-on-top popup notes app for Windows (Pimo)",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder",
+    "dist": "electron-builder --win",
+    "make-icon": "node scripts/make-icon.js"
+  },
+  "devDependencies": {
+    "electron": "^25.0.0",
+    "electron-builder": "^24.0.0",
+    "png-to-ico": "^1.0.0"
+  },
+  "author": "higgn <dev+contact@example.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/higgn/pimo-popup-notes.git"
+  },
+  "build": {
+    "appId": "com.pimo.app",
+    "productName": "Pimo",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "icon.ico"
+    }
+  }
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pimo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="container">
+    <div id="title-bar">
+      <div id="save-dot" title="Save status" aria-label="save-status"></div>
+      <button id="slide-btn" title="Slide to side" aria-label="slide">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+      </button>
+      <button id="small-btn" title="Restore to small" aria-label="small">
+        <img class="icon" src="svg/restoretosmall.svg" alt="restore-to-small" />
+      </button>
+      <button id="max-btn" title="Maximize" aria-label="maximize">
+        <img class="icon" src="svg/maximize.svg" alt="maximize" />
+      </button>
+      <button id="minimize-btn" title="Minimize" aria-label="minimize">
+        <img class="icon" src="svg/minimize.svg" alt="minimize" />
+      </button>
+      <button id="settings-btn" title="Settings" aria-label="settings">
+        <img class="icon" src="svg/setting.svg" alt="settings" />
+      </button>
+      <button id="quit-btn" title="Quit" aria-label="quit">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    <div id="page-bar">
+      <button id="home-btn" title="Open saved files folder" aria-label="home">
+        <img class="icon" src="svg/home.svg" alt="home" />
+      </button>
+      <button id="prev-page" title="Previous page">◀</button>
+      <div id="page-info">Page 1 — <span id="page-date">—</span></div>
+      <button id="next-page" title="Next page">▶</button>
+      <button id="new-page" title="New page">＋</button>
+      <button id="delete-page" title="Delete page" aria-label="delete-page">
+        <img class="icon" src="svg/delete.svg" alt="delete page" />
+      </button>
+    </div>
+    <textarea id="text-area" placeholder="Type your notes here..."></textarea>
+    <div id="image-container"></div>
+    <input id="file-input" type="file" accept="image/*" style="display:none" multiple />
+    <div id="image-controls">
+      <button id="add-img-btn" title="Add image" aria-label="add-image">+</button>
+    </div>
+    <div id="image-modal" style="display: none;">
+      <div class="modal-inner">
+        <img id="modal-img" src="">
+        <div class="modal-actions">
+          <button id="download-img" title="Download image">⬇</button>
+          <button id="close-modal">×</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <input id="import-input" type="file" accept="application/json" style="display:none" />
+    <div id="settings-modal" style="display:none">
+    <div class="settings-inner">
+      <div class="settings-header">Settings</div>
+      <div class="settings-body">
+      <button id="export-btn">Export data</button>
+      <button id="import-btn">Import data</button>
+        <hr />
+        <div class="about-block">
+          <div class="static-line"><strong>Author / Team:</strong> higgn</div>
+          <div class="static-line"><strong>Contact:</strong> dev+contact@example.com</div>
+          <div class="static-line"><strong>Repo / Website:</strong> https://example.com/higgn/pimo</div>
+          <div class="static-line"><strong>Donate:</strong> https://example.com/donate/higgn</div>
+          <div class="static-text"><strong>About / Credits:</strong>
+            <div class="static-paragraph">Pimo is built with ❤️ by higgn. This is a small, fast popup note app — drop images, jot notes, and slide it away. Dummy text for now; replace with your official blurb when ready.</div>
+          </div>
+        </div>
+      </div>
+      <div class="settings-actions">
+        <button id="close-settings">Close</button>
+      </div>
+    </div>
+  </div>
+  <script src="renderer.js"></script>
+  <div id="home-modal" style="display:none">
+    <div class="settings-inner">
+      <div class="settings-header">Saved files</div>
+      <div class="settings-body" id="home-list" style="max-height: 240px; overflow:auto"></div>
+      <div class="settings-actions">
+        <button id="close-home">Close</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
