@@ -199,7 +199,7 @@ Contact / Credits
 
 This project was crafted with keyboard coffee and a stubborn love of little tools. Author: higgn (GitHub: https://github.com/higgn). The app currently shows static contact info by default; replace with your details in the source if you fork.
 
-Have fun. And please don't blame the AI if the app occasionally forgets your lunch.
+Have fun. hehe deleted this 😏
 
 ---
 
