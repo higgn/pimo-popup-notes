@@ -1,3 +1,7 @@
+![Release](https://img.shields.io/github/v/release/higgn/pimo-popup-notes?style=flat-square)
+![License](https://img.shields.io/github/license/higgn/pimo-popup-notes?style=flat-square)
+![Downloads](https://img.shields.io/github/downloads/higgn/pimo-popup-notes/total?style=flat-square)
+
 Pimo — tiny always-on-top popup notes for Windows
 ===============================================
 
@@ -42,6 +46,15 @@ npm run dist
 ```
 
 If you want to contribute, read the Contributing section below. If you want to run the app only as a user, use the produced installer in `dist/`.
+
+Download the latest release
+---------------------------
+
+Prefer a one-click installer? Grab the latest Windows installer on the Releases page:
+
+https://github.com/higgn/pimo-popup-notes/releases/latest
+
+If you publish an installer in Releases, the badge at the top will automatically reflect the latest tag.
 
 Why Pimo exists
 ---------------
@@ -94,7 +107,9 @@ npm run make-icon
 npm run dist
 ```
 
-Artifacts are emitted to `dist/`. The important file is `dist\Pimo Setup <version>.exe`.
+Artifacts are emitted to `dist/`. The important file is `dist\\Pimo Setup <version>.exe`.
+
+Tip: include the installer as a Release asset (see "Download the latest release" above) and optionally provide a SHA256 checksum in the release notes.
 
 Signing the installer
 ---------------------
@@ -158,7 +173,7 @@ Small developer notes & tips
 ---------------------------
 
 - Ctrl+S saves manually. The green save dot in the title bar briefly pulses when the app successfully saves.
-- The Settings modal is now a compact square card and includes fields for credits/donate.
+- The Settings modal currently displays static About/credits info (author: higgn). If you fork the repo you can update those strings in `index.html`.
 - When dragging images from a browser that provides HTML, the app parses `<img src>` and fetches remote images when necessary.
 
 Publishing checklist
