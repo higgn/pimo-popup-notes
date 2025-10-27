@@ -8,6 +8,7 @@
 Pimo — tiny always-on-top popup notes for Windows
 ===============================================
 
+[![Pimo — tiny always-on-top Windows popup notes (auto-save + drag/drop images)](https://img.youtube.com/vi/q8wWPxYlZ78/maxresdefault.jpg)](https://youtu.be/q8wWPxYlZ78)
 Yes, another notes app — but this one is opinionated and tiny. Pimo is a minimal, always-on-top popup note editor for Windows with these sweet features:
 
 - Frameless, draggable popup window (slide-to-side / small / maximize / minimize)
