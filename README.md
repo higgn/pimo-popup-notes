@@ -1,6 +1,8 @@
 ![Release](https://img.shields.io/github/v/release/higgn/pimo-popup-notes?style=flat-square)
 ![License](https://img.shields.io/github/license/higgn/pimo-popup-notes?style=flat-square)
 ![Downloads](https://img.shields.io/github/downloads/higgn/pimo-popup-notes/total?style=flat-square)
+<img src="https://komarev.com/ghpvc/?username=higgn&repo=pimo-popup-notes&color=blue" alt="views" />
+
 
 
 ![Pimo ](pimo.gif)
